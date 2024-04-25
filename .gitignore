@@ -1,2 +1,3 @@
 .venv
 .idea
+/django-backend/src/proj/locals_vars.py
