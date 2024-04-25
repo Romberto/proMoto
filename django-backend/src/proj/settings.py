@@ -45,7 +45,7 @@ SECRET_KEY = SK
 DEBUG = True
 
 if DEBUG:
-    ALLOWED_HOSTS = ["localhost", '127.0.0.1', '0.0.0.0', 'promoto.tw1.ru', '185.178.46.198']
+    ALLOWED_HOSTS = ["localhost", '127.0.0.1', '0.0.0.0']
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
