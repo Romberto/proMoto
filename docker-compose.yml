@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  django-backend:
+    restart: always
+    build:
+      context: ./django-backend # django service folder
+    image: djangobackend

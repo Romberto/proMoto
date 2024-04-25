@@ -1,0 +1,16 @@
+{% extends 'menu/base.html' %}
+
+{% block body%}
+  <div class="center">
+	  <form method="post" class="card" novalidate>
+	  	{% csrf_token %}
+	    <h2 class="text-center">Log in to your account</h2>
+          {{form.username.label_tag}}
+		  {{form.username}}
+          {{form.password.label_tag}}
+          {{form.password}}
+          {{form.errors}}
+		<input type="submit" value="Login" class="btn btn-primary full-width">
+	</form>
+</div>
+{% endblock%}
