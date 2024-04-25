@@ -50,7 +50,7 @@ if DEBUG:
             'NAME': NAME,
             'USER': 'motouser',
             'PASSWORD': PASSWORD,
-            'HOST': 'Localhost',
+            'HOST': 'postgresql-db',
             'PORT': '5432',
         }
     }
