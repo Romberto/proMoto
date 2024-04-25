@@ -13,6 +13,8 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
+from .locals_vars import PASSWORD as P
+from .locals_vars import NAME as N
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -47,9 +49,9 @@ if DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': NAME,
+            'NAME': N,
             'USER': 'motouser',
-            'PASSWORD': PASSWORD,
+            'PASSWORD': P,
             'HOST': 'postgresql-db',
             'PORT': '5432',
         }
