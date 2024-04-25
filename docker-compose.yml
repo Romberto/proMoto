@@ -6,3 +6,8 @@ services:
     build:
       context: ./django-backend # django service folder
     image: djangobackend
+
+  postgresql-db:
+    restart: always
+    image: postgres
+    env_file: ./postgresql-db/.pg-env
