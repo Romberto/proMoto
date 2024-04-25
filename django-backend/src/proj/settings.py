@@ -45,7 +45,7 @@ SECRET_KEY = SK
 DEBUG = True
 
 if DEBUG:
-    ALLOWED_HOSTS = ["localhost", '127.0.0.1', '0.0.0.0', 'promoto.tw1.ru']
+    ALLOWED_HOSTS = ["localhost", '127.0.0.1', '0.0.0.0', 'promoto.tw1.ru', '185.178.46.198']
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -58,7 +58,7 @@ if DEBUG:
     }
 
 else:
-    ALLOWED_HOSTS = ['localhost', '188.225.72.113', '1566825-cw73062.twc1.net', '127.0.0.1', 'promoto.tw1.ru']
+    ALLOWED_HOSTS = ['185.178.46.198','localhost', '188.225.72.113', '1566825-cw73062.twc1.net', '127.0.0.1', 'promoto.tw1.ru']
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SECURE_SSL_REDIRECT = True
     SESSION_COOKIE_SECURE = True

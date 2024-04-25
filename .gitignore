@@ -1,3 +1,7 @@
 .venv
 .idea
+<<<<<<< HEAD
 .env
+=======
+/django-backend/src/proj/locals_vars.py
+>>>>>>> c7859666acd964cbbdc3952777633352c070a309
